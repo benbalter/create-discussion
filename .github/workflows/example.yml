@@ -24,7 +24,7 @@ jobs:
 
       - name: Generate new discussion using file
         id: create-discussion-with-file
-        uses: benbalter/create-discussion@use-actions-toolkit
+        uses: benbalter/create-discussion@fetch-repo-id-and-category-id
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
         with:
