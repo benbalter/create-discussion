@@ -21,6 +21,8 @@ jobs:
           title: "New Discussion ${{ env.DATE }} in General"
           body: |
             Let's Discuss!
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
 
       - name: Generate new discussion using file
         id: create-discussion-with-file
